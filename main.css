@@ -1,0 +1,67 @@
+.navBar {
+  background-color: #353a40;
+}
+
+.linkTicket {
+  color: #27a446;
+}
+
+.card-text {
+  font-weight: 500;
+}
+
+.textoCarrusel {
+  justify-content: end;
+}
+
+.text {
+  overflow: auto;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.imgCarrusel {
+  max-height: 90vh;
+  filter: brightness(0.3);
+  z-index: 5;
+}
+
+.containerTexto {
+  max-height: 90vh;
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  align-items: center;
+}
+
+.cartas {
+  /* max-height: vh; */
+  z-index: 10;
+}
+
+.backNegocio {
+  background-color: #6d767d;
+}
+
+.octubre {
+  background-color: #353a40;
+  color: white;
+}
+.botonEnviar {
+  background-color: #96c93e;
+}
+@media (max-width: 767.98px) {
+  .containerTexto {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.contenedorFooter {
+  background-color: #1e516e;
+}
+
+.charlaIgnite{
+  border-bottom-style: dotted;
+}
