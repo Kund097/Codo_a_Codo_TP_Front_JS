@@ -17,8 +17,8 @@
     <nav class="navbar navbar-expand-lg navBar d-flex z-3 sticky-top">
         <div class="container">
 
-            <a class="navbar-brand text-light  " href="#"><img src="img/codoacodo.png" alt="Logo" width="90"
-                    height="54" class="">
+            <a class="navbar-brand text-light  " href="#"><img src="img/codoacodo.png" alt="Logo" width="90" height="54"
+                    class="">
                 Codo a Codo
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -36,7 +36,8 @@
 
                     <ul class="navbar-nav ">
                         <li class="nav-item">
-                            <a class="nav-link active text-white-50" aria-current="page" href="#lugarYFecha">El lugar y la
+                            <a class="nav-link active text-white-50" aria-current="page" href="#lugarYFecha">El lugar y
+                                la
                                 fecha</a>
                         </li>
                         <li class="nav-item">
@@ -208,14 +209,101 @@
 
             </div>
 
-            <div class="col-12 botonEnviar text-center rounded">
+            <div class="col-12 text-center rounded">
 
-                <input type="submit" class="btn text-light"></input>
+                <input type="submit" class="btn w-100 botonEnviar text-light"></input>
 
             </div>
 
         </form>
     </div>
+
+    <div class="container" id="comprarTicket">
+
+        <form action="">
+
+            <div class="descuentos d-flex row text-center card-group justify-content-center">
+
+                <div class="card border-dark rounded estudiante" style="max-width: 18rem;">
+                    <div class="card-header">Estudiante</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tiene un descuento</h5>
+                        <h5>80%</h5>
+                        <p class="">*Presentar documentación</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card border-dark rounded trainee" style="max-width: 18rem;">
+                    <div class="card-header">Trainee</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tiene un descuento</h5>
+                        <h5>50%</h5>
+                        <p class="">*Presentar documentación</p>
+                    </div>
+                </div>
+                <br>
+                <div class="card border-dark rounded junior" style="max-width: 18rem;">
+                    <div class="card-header">Junior</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tiene un descuento</h5>
+                        <h5>15%</h5>
+                        <p class="">*Presentar documentación</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center">
+                <p>VENTA</p>
+                <h2>VALOR DE TICKET $200</h2>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="nombre"></label>
+                    <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+                </div>
+                <div class="col">
+                    <label for="apellido"></label>
+                    <input type="text" class="form-control" placeholder="Apellido" name="apellido">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="correo"></label>
+                    <input type="email" class="form-control" placeholder="Correo">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" class="form-control" name="cantidad" placeholder="Cantidad">
+                </div>
+                <div class="col">
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="" class="form-control">
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Trainee">Trainee</option>
+                        <option value="Junior">Junior</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="rounded row text-center mt-2">
+                <div class="col">
+                    <input class="btn w-100 botonEnviar text-light" type="reset" value="Borrar">
+                </div>
+                <div class="col">
+                    <input class="btn w-100 botonEnviar text-light" type="submit" value="Enviar">
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
 
     <div class="contenedorFooter">
         <footer class="">
