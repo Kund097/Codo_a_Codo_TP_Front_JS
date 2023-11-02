@@ -87,4 +87,19 @@
   .junior {
     border-color: goldenrod !important;
   }
+  .card:hover {
+    transform: scale(1.1);
+    z-index: 5;
+  }
+}
+
+.ocultar {
+  display: none;
+}
+
+.error {
+  border-color: red !important;
+}
+.error::placeholder {
+  color: red !important;
 }

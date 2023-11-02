@@ -254,7 +254,7 @@
             </div>
             <div class="text-center">
                 <p>VENTA</p>
-                <h2>VALOR DE TICKET $200</h2>
+                <h2>VALOR DE TICKET $<span id="valorTicket"></span> </h2>
             </div>
 
             <div class="row">
@@ -278,25 +278,28 @@
             <div class="row">
                 <div class="col">
                     <label for="cantidad">Cantidad</label>
-                    <input type="number" class="form-control" name="cantidad" placeholder="Cantidad">
+                    <input type="number" class="form-control" name="cantidad" placeholder="Cantidad" id="cantidad" value="">
                 </div>
                 <div class="col">
                     <label for="categoria">Categoria</label>
-                    <select name="categoria" id="" class="form-control">
-                        <option value="Estudiante">Estudiante</option>
-                        <option value="Trainee">Trainee</option>
-                        <option value="Junior">Junior</option>
+                    <select name="categoria" id="categoria" class="form-control">
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
                     </select>
                 </div>
             </div>
 
+            <div class="p-2 mt-3 mb-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3" id="mostrarResumen" hidden>
+                Total a pagar: $ <span id="totalAPagar"></span>
+            </div>
 
             <div class="rounded row text-center mt-2">
                 <div class="col">
-                    <input class="btn w-100 botonEnviar text-light" type="reset" value="Borrar">
+                    <input class="btn w-100 botonEnviar text-light" type="reset" value="Borrar" id="limpiarTicket">
                 </div>
                 <div class="col">
-                    <input class="btn w-100 botonEnviar text-light" type="submit" value="Enviar">
+                    <input class="btn w-100 botonEnviar text-light" type="button" value="Resumen" id="resumen">
                 </div>
             </div>
 
@@ -305,7 +308,7 @@
     </div>
 
 
-    <div class="contenedorFooter">
+    <div class="contenedorFooter mt-4">
         <footer class="">
             <ul class="list-group list-group-horizontal-md justify-content-center p-3">
                 <li class="btn text-light">Preguntas frecuentes</li>
@@ -325,6 +328,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+        <script src="/index.js"></script>
 </body>
 
 </html>
