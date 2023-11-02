@@ -16,6 +16,7 @@ function totalAPagar() {
 
   let descuento = calcularDescuento($obtenerCategoria.value, $cantidad.value);
   $totalAPagar.textContent = descuento;
+  manejarError(false);
   mostrarResumen();
 }
 
@@ -42,8 +43,7 @@ $botonLimpiarFormularioTicket.addEventListener(
 );
 
 function limpiarFormularioTicket() {
-  let $cantidad = document.getElementById("cantidad");
-  $cantidad.classList.remove("error");
+  manejarError(false);
   ocultarResumen();
 }
 
@@ -61,7 +61,16 @@ let $seleccionCategoria = document.getElementsByClassName("descuentos").target;
 
 function validarCantidad(cantidad) {
   if (cantidad.value === 0 || cantidad.value === "") {
-    cantidad.classList.add("error");
+    manejarError(true);
     return true;
+  }
+}
+
+function manejarError(resultado) {
+  let $cantidad = document.getElementById("cantidad");
+  if (resultado) {
+    $cantidad.classList.add("error");
+  } else {
+    $cantidad.classList.remove("error");
   }
 }
